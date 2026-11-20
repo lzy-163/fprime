@@ -34,3 +34,4 @@ jobs:
       build_location: LedBlinker
       run_unit_tests: true
       target_ref: ${{ needs.get-branch.outputs.target-branch }}
+    secrets: inherit
