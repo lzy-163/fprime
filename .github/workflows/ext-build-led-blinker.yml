@@ -29,8 +29,8 @@ jobs:
     needs: get-branch
     name: ""
     uses: ./.github/workflows/reusable-project-builder.yml
-    with: 
+    with:
       target_repository: fprime-community/fprime-workshop-led-blinker
-      build_location: LedBlinker
+      build_location: .
       run_unit_tests: true
       target_ref: ${{ needs.get-branch.outputs.target-branch }}
