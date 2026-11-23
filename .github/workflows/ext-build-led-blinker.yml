@@ -27,7 +27,7 @@ jobs:
 
   run:
     needs: get-branch
-    name: ""
+    name: "Run"
     uses: ./.github/workflows/reusable-project-builder.yml
     with: 
       target_repository: fprime-community/fprime-workshop-led-blinker
